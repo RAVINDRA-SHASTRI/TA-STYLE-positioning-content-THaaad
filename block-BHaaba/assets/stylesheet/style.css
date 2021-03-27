@@ -50,50 +50,79 @@ table {
 * {
     box-sizing: border-box;
 }
+body{
+    line-height: 1.5;
+    font-size: 16px;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 64px;
+    padding: 0 32px;
+}
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear:both;
 }
 .header {
-    height: 60px;
-    line-height: 60px;
-    background-color:aqua;
-    vertical-align: middle;
+    background-color:#222946;
+    height: 72px;
+    line-height: 72px;
 }
 .brand {
     font-weight: bold;
     font-size: 40px;
     float: left;
     width: 20%;
+    vertical-align: middle;
+    color: green;
 }
 .nav {
     float: right;
 }
 .nav a {
-    font-size: 17px;
+    font-size: 24px;
     text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-left: 32px;
 }
-img{
-    width: 500px;
-    height: 250px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-right: 30px;
+.section {
+    padding: 60px 0;
+    background-color: #e9ecfc;
 }
-h2 {
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-footer{
-    margin-top: 20px;
-    background-color: aqua;
+.article-image {
     width: 100%;
-    padding: 20px 0px;
+    height: 300px;
+    object-fit: cover;
 }
-.small{
-    margin-left: 110px;
-    
+.col{
+    float: left;
+    width: 30%;
+    margin: 0 1.2%;
+}
+p {
+    font-size: 20px;
+    margin-top: 24px;
+}
+footer {
+    background-color: #222946;
+    color: #ffffff;
+}
+.footer small {
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+}
+.footer nav {
+    float: right;
+    margin-bottom: 50px;
+}
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    padding-bottom: 30px;
 }
