@@ -6,10 +6,82 @@
 
 3. The header must be fixed at the top of the page.
 
-4. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image.
+4. Inside the main content take an article section having two columns. 
+In the first column put a heading and some introductory text of the article and 
+in the second column take an image.
 
-5. After the article section, take a gallery section, in which there will be two rows and in both the row there will be three columns. Each column must have a different image.
+5. After the article section, take a gallery section, in which there will be two rows and
+ in both the row there will be three columns. Each column must have a different image.
 
 6. After the gallery section footer will come.
 
-7. Take a circular button at the right bottom corner of the page and keep its position fixed. The button should always take to the top of the page once clicked. -->
+7. Take a circular button at the right bottom corner of the page and keep its position fixed. 
+The button should always take to the top of the page once clicked. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2-positioning</title>
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+    <script src="https://kit.fontawesome.com/1ccbc6b453.js" crossorigin="anonymous"></script>
+</head>
+<body id="top">
+    <header class="header-container clearfix">
+        <nav class="logo">
+            <a href="#">AltCampus</a>
+        </nav>
+
+        <nav class="nav">
+            <a href="#">HOME</a>
+            <a href="#">CONTACT</a>
+            <a href="#">SERVICES</a>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section class="section-container">
+            <article>
+                <div class="para">
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
+
+                  <p>Nulla quam nostrum eius rerum.Enim, quam? Aliquid ab sed provident aspernatur,
+                    laborum maiores nesciuntalias possimus omnis iusto. 
+                    Quam, mollitia beatae. Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Exercitationem est eius corrupti illo nostrum perferendis facere 
+                    assumenda voluptates enim voluptas ipsam repellat cum obcaecati corporis
+                    magni nemo, tempore natus asperiores? Lorem ipsum dolor sit amet
+                     consectetur adipisicing elit. Temporibus, suscipit dignissimos! Hic 
+                     magnam eaque quia distinctio dolor, obcaecati esse maiores earum tempor
+                     veniam fugit laudantium, eligendi incidunt natus minus ducimus!
+                </p>
+                </div>
+                <div>
+                      <img src="assets/media/pic 1.jpg" class="image-one" alt="pic 1.jpg">
+                </div>
+
+            </article>
+            <div>
+                <img src="assets/media/pic 2.jpg" class="pic-one" alt="pic 2.jpg">
+                <img src="assets/media/pic 3.jpg" class="pic-one" alt="pic 3.jpg">
+                <img src="assets/media/pic 4.jpg" class="pic-one" alt="pic 4.jpg">
+                <img src="assets/media/pic 5.jpg" class="pic-one" alt="pic 5.jpg">
+                <img src="assets/media/pic 6.jpg" class="pic-one" alt="pic 6.jpg">
+                <img src="assets/media/pic 7.jpg" class="pic-one" alt="pic 7.jpg">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </nav>
+        <a href="#top" class="top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </footer>
+</body>
+</html>
